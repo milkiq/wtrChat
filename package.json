@@ -1,0 +1,17 @@
+{
+  "name": "wtrChat",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "./src/client/client.js",
+  "main": "./src/server/server.js",
+  "dependencies": {
+    "pkg": "^4.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pkgClient": "rm -rf dist && pkg . -t node14-win-x64,node14-linux-x64,node14-macos-x64 --out-path=dist/ && cp src/client/config.json dist/",
+    "run": "node server.js"
+  },
+  "author": "littleIQ",
+  "license": "ISC"
+}
